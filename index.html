@@ -5,8 +5,18 @@
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<div id="widget-content"></div> <!-- Put this at the place where you want to display --> 
+<script>
+	 const WIDTH = '100%' // replace to size you want
+	 const HEIGHT = '500px' // replace to size you want
+
+	 var frm = document.createElement("IFRAME");
+	 frm.style.border="none";
+	 frm.style.width=WIDTH;
+	 frm.style.height=HEIGHT;
+	 frm.setAttribute("src", "https://widget.dev.japanticket.com/4?productList=13&productList=14&lang=ja");
+	 document.getElementById('widget-content').appendChild(frm);
+</script>
 
 </body>
 </html>
